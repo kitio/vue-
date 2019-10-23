@@ -2,8 +2,10 @@
 
 import Vue from "vue";
 
-import {Header } from 'mint-ui';
+import {Header,Swipe, SwipeItem } from 'mint-ui';
 Vue.component(Header.name,Header)
+Vue.component(Swipe.name,Swipe)
+Vue.component(SwipeItem.name,SwipeItem)
 
 //导入mui样式
 import "./lib/mui/css/mui.min.css"
@@ -14,6 +16,11 @@ import "./lib/mui/css/icons-extra.css"
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 import router from './router'
+
+//导入vue-resource
+import vueResource from 'vue-resource';
+Vue.use(vueResource);
+
 
 
 import app from './app.vue';
